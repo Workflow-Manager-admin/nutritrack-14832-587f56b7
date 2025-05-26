@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NutriTrackMainComponent } from './nutritrack-main/nutritrack-main.component';
 
+// PUBLIC_INTERFACE
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, NutriTrackMainComponent],
