@@ -83,6 +83,8 @@ export class NutriTrackMainComponent {
       }
       case 'month':
         return now.toLocaleString('default', { month: 'long', year: 'numeric' });
+      default:
+        return '';
     }
   }
 
