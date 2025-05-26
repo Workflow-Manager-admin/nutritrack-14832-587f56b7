@@ -1,0 +1,116 @@
+<!--
+NutriTrack Main Container UI
+- Tabs/buttons for day/week/month switching
+- Summary dashboard for calories/protein
+- Meal creation area with searchable ingredient list and chips
+- List of meals saved in the current view
+-->
+<div class="nutritrack-main-container">
+  <h2 class="title">NutriTrack</h2>
+  <div class="subheading">Track your calories and protein. Build meals. Monitor progress.</div>
+
+  <!-- Time-based View Selection Tabs -->
+  <div class="timeview-tabs" role="tablist">
+    <button [class.active]="timeView === 'day'" (click)="setTimeView('day')" role="tab">
+      Day
+    </button>
+    <button [class.active]="timeView === 'week'" (click)="setTimeView('week')" role="tab">
+      Week
+    </button>
+    <button [class.active]="timeView === 'month'" (click)="setTimeView('month')" role="tab">
+      Month
+    </button>
+    <span class="period-label">{{ displayPeriodLabel }}</span>
+  </div>
+
+  <!-- Dashboard: total calories and protein for current view -->
+  <div class="dashboard-summary">
+    <div class="stat-card">
+      <span class="card-label">Total Calories</span>
+      <span class="card-value">{{ totalCalories }}</span>
+      <span class="unit">kcal</span>
+    </div>
+    <div class="stat-card accent">
+      <span class="card-label">Total Protein</span>
+      <span class="card-value">{{ totalProtein | number:'1.0-1' }}</span>
+      <span class="unit">g</span>
+    </div>
+  </div>
+
+  <!-- Meal creation section -->
+  <form class="meal-creation" (ngSubmit)="saveMeal()" autocomplete="off">
+    <h3>Create a Meal</h3>
+    <label class="meal-name-label">
+      Meal name
+      <input [(ngModel)]="mealName"
+             name="mealName"
+             maxlength="40"
+             required
+             placeholder="Lunch, Dinner, Post-workout..."
+             autocomplete="off"/>
+    </label>
+    <div class="ingredient-select-list">
+      <input type="text"
+            [(ngModel)]="ingredientSearchQuery"
+            name="ingredientSearch"
+            placeholder="Search ingredients..."
+      />
+      <div class="ingredients-scroll">
+        <button
+          *ngFor="let ing of filteredIngredients"
+          type="button"
+          class="ingredient-btn"
+          [disabled]="selectedIngredients.includes(ing)"
+          (click)="addIngredient(ing)">
+            {{ ing.name }}
+            <span class="nutrient-info">{{ ing.calories }} kcal, {{ ing.protein }}g protein</span>
+        </button>
+      </div>
+    </div>
+    <!-- Selected Ingredients -->
+    <div class="ingredient-chips" *ngIf="selectedIngredients.length">
+      <span class="chip" *ngFor="let ing of selectedIngredients">
+        {{ ing.name }}
+        <button title="Remove ingredient" (click)="removeIngredient(ing)" type="button">&times;</button>
+      </span>
+    </div>
+    <!-- Save/Reset Buttons -->
+    <div class="meal-actions">
+      <button type="submit"
+              class="save-btn"
+              [disabled]="!selectedIngredients.length || !mealName.trim()">Save Meal</button>
+      <button type="button" (click)="clearSelection()" class="clear-btn"
+              [disabled]="!selectedIngredients.length && !mealName">Clear</button>
+    </div>
+  </form>
+
+  <!-- Meals List -->
+  <div class="meals-list-section">
+    <h3>Your Meals <span class="period-label-sm">{{ displayPeriodLabel }}</span></h3>
+    <div *ngIf="!mealsForPeriod.length" class="empty-state">
+      No meals recorded in this period.
+    </div>
+    <div *ngFor="let meal of mealsForPeriod; let i = index" class="meal-card">
+      <div class="meal-header">
+        <span class="meal-name">{{ meal.name }}</span>
+        <span class="meal-date">
+          {{ meal.date | date: timeView === 'day' ? 'mediumTime' : (timeView === 'week' ? 'EEE, MMM d, h:mm a' : 'MMM d, h:mm a') }}
+        </span>
+        <button class="remove-btn" (click)="removeMeal(meals.indexOf(meal))" title="Delete Meal">&times;</button>
+      </div>
+      <div class="meal-ingredients">
+        <span *ngFor="let ing of meal.ingredients" class="ingredient-chip">
+          {{ ing.name }}
+          <span class="nutr-numbers">{{ ing.calories }} kcal, {{ ing.protein }}g</span>
+        </span>
+      </div>
+      <div class="meal-nutrients">
+        <span class="nutr-summary">
+          <span>{{ getMealCalories(meal) }} kcal</span>
+          &middot; 
+          <span>{{ getMealProtein(meal) | number:'1.0-1' }}g protein</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
