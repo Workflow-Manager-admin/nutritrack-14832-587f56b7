@@ -7,6 +7,6 @@ import { NutriTrackMainComponent } from './nutritrack-main/nutritrack-main.compo
   selector: 'app-root',
   imports: [RouterOutlet, NutriTrackMainComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {}

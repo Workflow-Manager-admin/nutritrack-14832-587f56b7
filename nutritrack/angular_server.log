@@ -840,3 +840,27 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
 1:22:45 PM [vite] (client) Re-optimizing dependencies because vite config has changed
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-6SJDLKTG.mjs  | -           |  29.06 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [1.271 seconds]
+
+▲ [WARNING] Unexpected "<" [plugin angular-compiler] [css-syntax-error]
+
+    src/app/app.component.css:1:0:
+      1 │ <<<<<<
+        ╵ ^
+
+
+▲ [WARNING] TS-998113: RouterOutlet is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:8:12:
+      8 │   imports: [RouterOutlet, NutriTrackMainComponent],
+        ╵             ~~~~~~~~~~~~
+
+
