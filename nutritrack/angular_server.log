@@ -864,3 +864,27 @@ Application bundle generation complete. [1.271 seconds]
         ╵             ~~~~~~~~~~~~
 
 
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  28.57 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-THS6O2HM.mjs  | -           |  29.01 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [1.788 seconds]
+
+▲ [WARNING] Unexpected "<" [plugin angular-compiler] [css-syntax-error]
+
+    src/app/app.component.css:1:0:
+      1 │ <<<<<<
+        ╵ ^
+
+
+Page reload sent to client(s).
