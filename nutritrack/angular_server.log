@@ -888,3 +888,64 @@ Application bundle generation complete. [1.788 seconds]
 
 
 Page reload sent to client(s).
+ERROR RuntimeError: NG0302: The pipe 'number' could not be found in the '_NutriTrackMainComponent' component. Verify that it is included in the '@Component.imports' of this component. Find more at https://angular.dev/errors/NG0302
+    at getPipeDef (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:31266:11)
+    at Module.ɵɵpipe (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:31222:15)
+    at NutriTrackMainComponent_Template (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/src/app/nutritrack-main/nutritrack-main.component.html:35:32)
+    at executeTemplate (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19469:5)
+    at renderView (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19798:7)
+    at renderComponent (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19779:3)
+    at renderChildComponents (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19827:5)
+    at renderView (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19812:7)
+    at renderComponent (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19779:3)
+    at renderChildComponents (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19827:5) {
+  code: -302
+}
+ERROR RuntimeError: NG0302: The pipe 'number' could not be found in the '_NutriTrackMainComponent' component. Verify that it is included in the '@Component.imports' of this component. Find more at https://angular.dev/errors/NG0302
+    at getPipeDef (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:31266:11)
+    at Module.ɵɵpipe (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:31222:15)
+    at NutriTrackMainComponent_Template (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/src/app/nutritrack-main/nutritrack-main.component.html:35:32)
+    at executeTemplate (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19469:5)
+    at renderView (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19798:7)
+    at renderComponent (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19779:3)
+    at renderChildComponents (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19827:5)
+    at renderView (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19812:7)
+    at renderComponent (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19779:3)
+    at renderChildComponents (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19827:5) {
+  code: -302
+}
+ERROR RuntimeError: NG0302: The pipe 'number' could not be found in the '_NutriTrackMainComponent' component. Verify that it is included in the '@Component.imports' of this component. Find more at https://angular.dev/errors/NG0302
+    at getPipeDef (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:31266:11)
+    at Module.ɵɵpipe (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:31222:15)
+    at NutriTrackMainComponent_Template (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/src/app/nutritrack-main/nutritrack-main.component.html:35:32)
+    at executeTemplate (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19469:5)
+    at renderView (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19798:7)
+    at renderComponent (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19779:3)
+    at renderChildComponents (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19827:5)
+    at renderView (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19812:7)
+    at renderComponent (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19779:3)
+    at renderChildComponents (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19827:5) {
+  code: -302
+}
+1:26:00 PM [vite] Internal server error: undefined
+      at EventTarget.abortHandler (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-SZWEXFYI.js:9930:14)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:786:20)
+      at EventTarget.dispatchEvent (node:internal/event_target:721:26)
+      at abortSignal (node:internal/abort_controller:369:10)
+      at AbortController.abort (node:internal/abort_controller:403:5)
+      at EventTarget.abort (node:internal/deps/undici/undici:5225:21)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:786:20)
+      at EventTarget.dispatchEvent (node:internal/event_target:721:26)
+      at abortSignal (node:internal/abort_controller:369:10)
+      at Timeout._onTimeout (node:internal/abort_controller:126:7)
+1:26:00 PM [vite] Internal server error: undefined
+      at EventTarget.abortHandler (/home/kavia/workspace/code-generation/nutritrack-14832-587f56b7/nutritrack/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-SZWEXFYI.js:9930:14)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:786:20)
+      at EventTarget.dispatchEvent (node:internal/event_target:721:26)
+      at abortSignal (node:internal/abort_controller:369:10)
+      at AbortController.abort (node:internal/abort_controller:403:5)
+      at EventTarget.abort (node:internal/deps/undici/undici:5225:21)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:786:20)
+      at EventTarget.dispatchEvent (node:internal/event_target:721:26)
+      at abortSignal (node:internal/abort_controller:369:10)
+      at Timeout._onTimeout (node:internal/abort_controller:126:7)
