@@ -538,3 +538,138 @@ Application bundle generation failed. [1.144 seconds]
          ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.113 seconds]
+
+▲ [WARNING] Unexpected "<" [plugin angular-compiler] [css-syntax-error]
+
+    src/app/app.component.css:1:0:
+      1 │ <<<<<<
+        ╵ ^
+
+
+▲ [WARNING] TS-998113: RouterOutlet is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:8:12:
+      8 │   imports: [RouterOutlet, NutriTrackMainComponent],
+        ╵             ~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:60:11:
+      60 │           *ngFor="let ing of filteredIngredients"
+         ╵            ~~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:71:35:
+      71 │     <div class="ingredient-chips" *ngIf="selectedIngredients.length">
+         ╵                                    ~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:72:26:
+      72 │       <span class="chip" *ngFor="let ing of selectedIngredients">
+         ╵                           ~~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:90:10:
+      90 │     <div *ngIf="!mealsForPeriod.length" class="empty-state">
+         ╵           ~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:93:10:
+      93 │     <div *ngFor="let meal of mealsForPeriod; let i = index" class=...
+         ╵           ~~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:102:15:
+      102 │         <span *ngFor="let ing of meal.ingredients" class="ingredi...
+          ╵                ~~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8004: No pipe found with name 'number'. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:35:49:
+      35 │ ...span class="card-value">{{ totalProtein | number:'1.0-1' }}</span>
+         ╵                                              ~~~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8004: No pipe found with name 'date'. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:97:25:
+      97 │           {{ meal.date | date: timeView === 'day' ? 'mediumTime' :...
+         ╵                          ~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8004: No pipe found with name 'number'. [plugin angular-compiler]
+
+    src/app/nutritrack-main/nutritrack-main.component.html:111:42:
+      111 │ ...<span>{{ getMealProtein(meal) | number:'1.0-1' }}g protein</span>
+          ╵                                    ~~~~~~
+
+  Error occurs in the template of component NutriTrackMainComponent.
+
+    src/app/nutritrack-main/nutritrack-main.component.ts:30:15:
+      30 │   templateUrl: './nutritrack-main.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
